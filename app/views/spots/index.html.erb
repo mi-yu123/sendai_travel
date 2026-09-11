@@ -1,0 +1,16 @@
+<h1>仙台おさんぽスポット</h1>
+
+<% @spots.each do |spot| %>
+  <div>
+    <h2><%= spot.name %></h2>
+
+    <p><%= spot.description %></p>
+
+    <p>
+      散歩時間：
+      <%= spot.walking_time %>分
+    </p>
+  </div>
+
+  <hr>
+<% end %>
